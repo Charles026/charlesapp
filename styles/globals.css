@@ -1,9 +1,21 @@
+/* styles/globals.css */
+@import '~@douyinfe/semi-ui/dist/css/semi.min.css';
+
+:root {
+  --ch-container-width-main: 1200px;
+  --ch-color-divider-line: #d7d7d7;
+  --ch-color-text-primary: #1F252D;
+  --ch-color-text-brand: rgb(30,97,255);
+  --ch-color-text-brand-subdue: rgba(30,97,255,0.15);
+}
+
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Helvetica Neue,Helvetica,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, sans-serif;
 }
 
 a {
@@ -15,12 +27,26 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+
+
+.semi-tabs-bar-line.semi-tabs-bar-top {
+  border-bottom: 0px solid #ffffff;
+}
+
+.semi-tabs-bar .semi-tabs-tab-active , .semi-tabs-bar .semi-tabs-tab-active:hover{
+  color: var(--ch-color-text-brand);
+  font-weight: 700;
+}
+
+.semi-tabs-bar .semi-tabs-tab {
+  font-family: Helvetica Neue,Helvetica,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, sans-serif;
+}
+
+.semi-navigation-horizontal {
+  border-bottom: 0px;
+  padding: 0;
+}
+.semi-navigation-horizontal .semi-navigation-inner {
+  justify-content: end;
 }
