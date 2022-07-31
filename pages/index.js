@@ -65,8 +65,7 @@ export default function Home() {
             <div className={styles.viewButtonWrapper}>
             
             <Button size='large' type='primary' theme='solid'>
-              View Project
-             
+             查看项目
             </Button>
             </div>
             
